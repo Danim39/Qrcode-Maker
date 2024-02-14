@@ -48,7 +48,7 @@ class Form(QWidget):
         if self.txturl.text() != "":
     
             qr = qrcode.make(self.txturl.text())
-        qr.save(self.txtname.text())
+        qr.save(self.txtname.text() +".png")
         
     def message(self):
         message="success full"
